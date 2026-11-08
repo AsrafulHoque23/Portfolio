@@ -1,26 +1,241 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My portfolio</title>
-    <style>
-        .container {
-            color: #eeff00;
-            background-color: #f30303;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Asraful web</title>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@5/themes.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+  <link rel="stylesheet" href="style.css">
+
+
 </head>
-<body>
-    Hello World!
-    <div  class="container">
-        <h1>Welcome to My Portfolio</h1>
-        <p>This is a brief introduction about myself and my work.</p>
-        <video controls>
-            <source src="Xue huā piāo piāo yi jian mei - Meme (Llama, dog, frog dancing) [4K].mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
+<section id="navbar">
+  <header
+    class="relative flex flex-wrap sm:justify-start sm:flex-nowrap w-full py-3 bg-navbar border-b border-navbar-line">
+    <nav class="max-w-340 w-full mx-auto px-4 sm:flex sm:items-center sm:justify-between ">
+      <div class="flex items-center justify-between">
+        <a class="flex-none text-3xl font-semibold text-foreground  theme-controller  focus:outline-hidden text-indigo-600 dark:text-indigo-400 focus:opacity-80 text-4xl font-black text-heading uppercase"
+          href="#" aria-label="Brand">
+          MD_Asraful
+        </a>
+        <div class="sm:hidden">
+          <button type="button"
+            class="hs-collapse-toggle relative size-9 flex justify-center items-center gap-x-2 rounded-lg bg-layer border border-layer-line text-layer-foreground shadow-2xs hover:bg-layer-hover focus:outline-hidden focus:bg-layer-focus disabled:opacity-500 disabled:pointer-events-none"
+            id="hs-navbar-example-collapse" aria-expanded="false" aria-controls="hs-navbar-example"
+            aria-label="Toggle navigation" data-hs-collapse="#hs-navbar-example">
+            <svg class="hs-collapse-open:hidden shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="24"
+              height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round">
+              <line x1="3" x2="21" y1="6" y2="6" />
+              <line x1="3" x2="21" y1="12" y2="12" />
+              <line x1="3" x2="21" y1="18" y2="18" />
+            </svg>
+            <svg class="hs-collapse-open:block hidden shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="24"
+              height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round">
+              <path d="M18 6 6 18" />
+              <path d="m6 6 12 12" />
+            </svg>
+            <span class="sr-only">Toggle navigation</span>
+          </button>
+        </div>
+      </div>
+      <div id="hs-navbar-example"
+        class="hidden hs-collapse overflow-hidden transition-all duration-300 basis-full grow sm:block"
+        aria-labelledby="hs-navbar-example-collapse" role="region">
+        <div class="flex flex-col gap-5 mt-5 sm:flex-row sm:items-center sm:justify-end sm:mt-0 sm:ps-5">
+          <a class="font-medium text-primary-active focus:outline-hidden text--400 text-2xl font-black text-heading"
+            href="#home" aria-current="page">Home</a>
+          <a class="font-medium text-primary-active focus:outline-hidden text--400 text-2xl font-black text-heading"
+            href="#projects">Projects</a>
+          <a class="font-medium text-primary-active focus:outline-hidden text--400 text-2xl font-black text-heading"
+            href="#about">About</a>
+          <a class="font-medium text-primary-active focus:outline-hidden text--400 text-2xl font-black text-heading"
+            href="#contact">Contact</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+</section>
+
+
+<section id="home">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <section
+    class="min-h-screen flex items-center justify-center bg-white dark:bg-gray-900 px-6 py-20 transition-colors duration-300">
+    <div class="max-w-7xl w-full flex flex-col-reverse lg:flex-row items-center gap-12">
+
+      <!-- Left Content -->
+      <div class="flex-1 text-center lg:text-left animate-fade-in-up">
+        <!-- Gradient Text Heading -->
+        <h1
+          class="text-6xl sm:text-6xl font-extrabold bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 bg-clip-text text-transparent mb-4">
+          Hi, I'm <span class="text-indigo-600 dark:text-indigo-400">Mohammed Asraful Hoque</span>
+        </h1>
+        <p class="text-lg sm:text-xl text-gray-700 dark:text-gray-300 mb-6 max-w-xl">
+          A passionate <span class="text-indigo-600 dark:text-indigo-400 font-medium">Developer</span> Currently
+          studying at <span class="text-indigo-600 dark:text-indigo-400 font-medium">International Islamic University
+            Chittagong</span>. I love to learn new technologies and create innovative solutions.
+        </p>
+
+        <!-- CTA Buttons -->
+        <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+          <a href="#projects"
+            class="px-6 py-3 text-white bg-gradient-to-r from-purple-600 to-pink-500 hover:brightness-110 rounded-xl font-semibold transition-transform transform hover:scale-105 shadow-md">
+            View Projects
+          </a>
+          <a href="#contact"
+            class="px-6 py-3 border border-indigo-500 text-indigo-500 hover:bg-indigo-500 hover:text-white dark:border-indigo-400 dark:text-indigo-400 dark:hover:bg-indigo-400 dark:hover:text-black rounded-xl font-semibold transition-transform transform hover:scale-105">
+            Contact
+          </a>
+        </div>
+
+        <!-- Social Icons -->
+        <div class="flex gap-6 mt-6 justify-center lg:justify-start text-gray-500 dark:text-gray-300 text-xl">
+          <a href="https://github.com/AsrafulHoque23" target="_blank" class="hover:text-purple-500 transition"><i
+              class="fab fa-github"></i></a>
+          <a href="https://www.instagram.com/asraful_mahadi?utm_source=ig_web_button_share_sheet&cplk=ZDNlZDc0MzIxNw=="
+            target="_blank" class="hover:text-purple-500 transition"><i class="fab fa-instagram"></i></a>
+          <a href="mailto:asrafulhoque93@gmail.com" class="hover:text-purple-500 transition"><i
+              class="fas fa-envelope"></i></a>
+        </div>
+      </div>
+
+      <!-- Right Image -->
+      <div class="flex-1 flex justify-center animate-float">
+        <img src="pfp.jpeg" alt="Asraful Hoque"
+          class="w-64 h-64 rounded-full border-4 border-indigo-500 dark:border-indigo-400 shadow-xl object-cover hover:scale-105 transition duration-500" />
+      </div>
+    </div>
+  </section>
+
+</section>
+
+<section id="projects">
+
+  <section class="flex items-center h-screen p-16  dark:bg-gray-400 bg-white dark:bg-gray-800">
+    <div class="container flex flex-col items-center ">
+      <div class="flex flex-col gap-6 max-w-md text-center">
+        <h2 class="font-extrabold text-9xl text-gray-600 dark:text-gray-100">
+          <span class="sr-only">Error</span>404
+        </h2>
+        <p class="text-2xl md:text-3xl dark:text-gray-300">Sorry, I don't have any projects to show.</p>
+        <a href="#home"
+          class="px-8 py-4 text-xl font-semibold rounded bg-purple-600 text-gray-50 hover:text-gray-200">Back to
+          home</a>
+      </div>
+    </div>
+  </section>
+
+</section>
+
+<section id="about" class="">
+  <section
+    class="min-h-screen bg-primary text-idigo py-16 px-6 flex flex-col md:flex-row bg-white dark:bg-gray-900 items-center justify-between gap-8">
+    <!-- Left Side: Image -->
+    <div class="w-full md:w-5/12 flex justify-center h-full md:justify-end">
+      <img src="pfp.jpeg" alt="About Me" class="w-72 h-96 md:w-80 lg:w-96 object-cover rounded-lg shadow-lg" />
     </div>
 
+    <!-- Right Side: Text Content -->
+    <div class="w-full md:w-7/12 text-center md:text-left relative">
+      <!-- Vertical Text -->
+      <div
+        class="absolute left-[40%] -top-6 md:-left-16  lg:top-0 md:top-6 rotate-0 md:rotate-[-90deg] text-sm tracking-widest">
+        <div class="flex items-center justify-center gap-2 text-indigo-300">
+          <div class="w-16 h-[2px] bg-white text-indigo-400"></div>
+          <p>MORE ABOUT</p>
+        </div>
+      </div>
+
+      <!-- Main Heading -->
+      <h2 class="text-3xl md:text-5xl font-bold leading-tight mb-4 pl-10 text-indigo-500">
+        A Passionate <br> Software Developer
+      </h2>
+
+      <!-- Description -->
+      <p class="text-black-300 mb-6 text-sm md:text-base leading-relaxed max-w-2xl mx-auto md:mx-0 text-indigo-300">
+        I’m Abdul Baset, a passionate Software Developer with expertise in Vue.js, Laravel, & modern web technologies. I
+        specialize in building user-friendly applications that solve real-world problems. With a deep understanding of
+        frontend development, state management, and API integration, I can bring your ideas to life.
+      </p>
+
+      <!-- Buttons -->
+      <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+        <a href="#projects"
+          class="bg-tertiary text-white font-semibold py-2 px-4 rounded-lg hover:bg-tertiary/80 text-center px-6 py-3 text-white bg-gradient-to-r from-purple-600 to-pink-500 hover:brightness-110 rounded-xl font-semibold transition-transform transform hover:scale-105 shadow-md">
+          See Projects
+        </a>
+        <a href="#"
+          class="border border-tertiary text-white font-semibold py-2 px-4 rounded-lg hover:bg-tertiary/10 text-center  border-indigo-500 text-indigo-500 hover:bg-indigo-500 hover:text-white dark:border-indigo-400 dark:text-indigo-400 dark:hover:bg-indigo-400 dark:hover:text-black rounded-xl font-semibold transition-transform transform hover:scale-105">
+          More Details
+        </a>
+      </div>
+    </div>
+  </section>
+
+
+</section>
+
+<section id="contact">
+
+  <div class="min-h-screen bg-gray-800 py-6 flex flex-col justify-center sm:py-12">
+    <div class="relative py-3 sm:max-w-xl sm:mx-auto">
+      <div
+        class="absolute inset-0 bg-gradient-to-r from-indigo-700 to-purple-500 shadow-lg transform -skew-y-6 sm:skew-y-0 sm:-rotate-6 sm:rounded-3xl">
+      </div>
+      <div class="text-white relative px-4 py-10 bg-indigo-400 shadow-lg sm:rounded-3xl sm:p-20">
+
+        <div class="text-center pb-6">
+          <h1 class="text-3xl">Contact Us!</h1>
+
+          <p class="text-gray-300">
+            Fill up the form below to send us a message.
+          </p>
+        </div>
+
+        <form action="https://api.web3forms.com/submit" method="POST">
+          <input type="hidden" name="access_key" value="d7dac2b7-d126-40b1-b060-f408f0cf0b4d">
+          <input
+            class="shadow mb-4 appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+            type="text" placeholder="Name" name="name">
+
+          <input
+            class="shadow mb-4 appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+            type="email" placeholder="Email" name="email">
+
+          <input
+            class="shadow mb-4 appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+            type="text" placeholder="Subject" name="_subject">
+
+          <textarea
+            class="shadow mb-4 min-h-0 appearance-none border rounded h-64 w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+            type="text" placeholder="Type your message here..." name="message" style="height: 121px;"></textarea>
+
+          <div class="flex justify-between">
+            <input
+              class="shadow bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+              type="submit" value="Send ➤">
+            <input
+              class="shadow bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+              type="reset">
+          </div>
+
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
 </body>
+
 </html>
